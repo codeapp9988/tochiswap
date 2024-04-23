@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+    <title>Setochi Mekanito</title>
+    <style>
+        /* Button Styles */
+        .button {
+            padding: 10px 20px;
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+            background-color: black;
+            color: white;
+        }
+
+        .login {
+            margin-right: 10px;
+        }
+
+        .signup {
+            margin-left: 10px;
+        }
+
+        /* Rainbow Border Animation */
+        .button:hover {
+            background-color: black;
+            border-color: red;
+            animation: rainbow 2s infinite;
+        }
+
+        @keyframes rainbow {
+            0% { border-color: red; }
+            16.666% { border-color: orange; }
+            33.333% { border-color: yellow; }
+            50% { border-color: green; }
+            66.666% { border-color: blue; }
+            83.333% { border-color: indigo; }
+            100% { border-color: violet; }
+        }
+
+        /* Other Styles */
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        .logo {
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Login and Signup Buttons -->
+    <button class="button login" onclick="window.location.href = 'https://app.tochiswap.co/login';">Login</button>
+    <button class="button signup" onclick="window.location.href = 'https://app.tochiswap.co/signup';">Signup</button>
+
+    <!-- Logo -->
+    <div class="logo">
+        <h1>Tochi-Swap</h1>
+    </div>
+</body>
+</html>
